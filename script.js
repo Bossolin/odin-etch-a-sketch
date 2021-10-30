@@ -5,10 +5,8 @@ function createGrid(input) {
     const div = document.createElement("div");
     div.classList.add("box");
     container.appendChild(div);
+    div.addEventListener("mouseover", () => div.classList.add("etched"));
   }
 }
 
 createGrid(16);
-
-const div = document.querySelector(".box");
-div.addEventListener("");

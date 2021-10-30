@@ -12,11 +12,15 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   max-width: 720px;
-  margin: 8px;
+  margin: auto;
 }
 
 .box {
   width: 45px;
   height: 45px;
   border: black 1px solid;
+}
+
+.etched {
+  background-color: black;
 }
