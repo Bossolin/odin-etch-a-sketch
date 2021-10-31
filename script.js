@@ -1,12 +1,24 @@
 const container = document.querySelector(".container");
+const resetButton = document.querySelector("#reset");
+const newGridButton = document.querySelector("#new-grid");
+newGridButton.addEventListener("click", newGrid);
 
-function createGrid(input) {
+function newGrid() {
+  const divs = document.querySelectorAll(".box");
+  for (let i = 0; i < divs.length; i++) {
+    container.removeChild(divs[i]);
+  }
+
+  createGrid();
+}
+
+const createGrid = () => {
+  let input = prompt("Choose the size of the grid (up to 100) ", "");
   for (let i = 0; i < input * input; i++) {
     const div = document.createElement("div");
     div.classList.add("box");
     container.appendChild(div);
     div.addEventListener("mouseover", () => div.classList.add("etched"));
+    resetButton.addEventListener("click", () => div.classList.remove("etched"));
   }
-}
-
-createGrid(16);
+};

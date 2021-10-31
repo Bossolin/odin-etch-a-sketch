@@ -4,6 +4,16 @@
   padding: 0;
 }
 
+body {
+  max-width: 720px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
 h1 {
   text-align: center;
 }
@@ -11,7 +21,6 @@ h1 {
 .container {
   display: flex;
   flex-wrap: wrap;
-  max-width: 720px;
   margin: auto;
 }
 
