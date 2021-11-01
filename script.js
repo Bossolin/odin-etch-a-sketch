@@ -14,7 +14,8 @@ function newGrid() {
 
 const createGrid = () => {
   let input = prompt("Choose the size of the grid (up to 100 per side) ", "");
-  input > 100 ? alert("The amount of squares is too high!") : "";
+  // input > 100 ? alert("The amount of squares is too high!") : "";
+  if (input > 100) return alert("The amount of squares is too high!");
 
   for (let i = 0; i < input * input; i++) {
     const div = document.createElement("div");
