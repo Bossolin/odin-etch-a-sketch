@@ -7,32 +7,39 @@
 body {
   max-width: 720px;
   margin: auto;
+  background-color: black;
+}
+
+button {
+  background-color: black;
+  color: yellowgreen;
+  border-radius: 8px;
+  padding: 8px 16px;
+  border: greenyellow 1px solid;
 }
 
 header {
   display: flex;
   justify-content: space-around;
+  margin: 4px 0;
 }
 
 h1 {
   text-align: center;
+  color: rgb(170, 247, 28);
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
-  align-content: flex-start;
-  margin: auto;
-  border: black 1px solid;
+  border: greenyellow 1px solid;
   height: 720px;
-  max-height: 720px;
 }
 
 .box {
-  border: black 1px solid;
-  flex: 1 1 auto;
+  border: greenyellow 1px solid;
 }
 
 .etched {
-  background-color: black;
+  background-color: greenyellow;
 }

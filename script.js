@@ -14,14 +14,13 @@ function newGrid() {
 
 const createGrid = () => {
   let input = prompt("Choose the size of the grid (up to 100 per side) ", "");
-  input > 100 ? alert("The amount of squares is too damn high!") : "";
+  input > 100 ? alert("The amount of squares is too high!") : "";
 
   for (let i = 0; i < input * input; i++) {
     const div = document.createElement("div");
-    div.classList.add("box");
-    div.style.width = `${100 / input}%`;
-    div.style.height = `${100 / input}%`;
     container.appendChild(div);
+    div.classList.add("box");
+    div.style.cssText = `height: ${100 / input}%; width: ${100 / input}%`;
     div.addEventListener("mouseover", () => div.classList.add("etched"));
     resetButton.addEventListener("click", () => div.classList.remove("etched"));
   }
