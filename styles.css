@@ -11,7 +11,7 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 h1 {
@@ -21,13 +21,16 @@ h1 {
 .container {
   display: flex;
   flex-wrap: wrap;
+  align-content: flex-start;
   margin: auto;
+  border: black 1px solid;
+  height: 720px;
+  max-height: 720px;
 }
 
 .box {
-  width: 45px;
-  height: 45px;
   border: black 1px solid;
+  flex: 1 1 auto;
 }
 
 .etched {
